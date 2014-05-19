@@ -1,28 +1,5 @@
-== README
+CNC Technology Works Responsive Web Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=====
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This repository maintains and manages the creation of a responsive web application for CNC Technology Works as commissioned by Darryl Brewer and his team. It is written in Ruby (1.9.3) on Rails (4.0.2) using Bootstrap (bootstrap-sass 3.1.1.0) as a base and is intended to promote the client's product, provide information, and act as a means of connecting with potential sponsors. The website will be deployed and hosted by Monkey Wrench Solutions. 

@@ -3,3 +3,5 @@ CNC Technology Works Responsive Web Application
 =====
 
 This repository maintains and manages the creation of a responsive web application for CNC Technology Works as commissioned by Darryl Brewer and his team. It is written in Ruby (1.9.3) on Rails (4.0.2) using Bootstrap (bootstrap-sass 3.1.1.0) as a base and is intended to promote the client's product, provide information, and act as a means of connecting with potential sponsors. The website will be deployed and hosted by Monkey Wrench Solutions. 
+
+Progress on the this project is being tracked via GitHub issues.

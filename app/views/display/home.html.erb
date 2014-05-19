@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">We're challenging the convenience of car seats. <span class="text-muted">Safety shouldn't be a hassle.</span></h2>
+          <p class="lead">Today's child restraint systems are bulky, difficult to use properly, and often become a permanent fixture of your vehicle, reducing the seating capacity (and visual aesthetics) of your car. We're out to change all of that. Find out how Re-Lux seats can change the way you think about car seats.  </p>
+		  <p><%= link_to 'View details &raquo;'.html_safe, display_product_path, :class => "btn btn-default", :role => "button" %></p>
+        </div>
+        <div class="col-md-5">
+					<%= image_tag "logo-large.png", class: "featurette-image img-responsive img-rounded", width: "500px", height: "auto"%>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive img-rounded" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">CNC Technology Works is just the beginning. <span class="text-muted">Learn about National Eyes on Youth.</span></h2>
+          <p class="lead">Did you know that we ultimately plan on paying our success forward into a greater good? CNC Technology Works is meant to provide core funding for the start National Eyes on Youth, a non-profit organization with a goal of providing resources that enable and empower children in difficult situations to change their lives. </p>
+		  <p><%= link_to 'View details &raquo;'.html_safe, display_mission_path, :class => "btn btn-default", :role => "button" %></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">You can help us change the face of car seats. <span class="text-muted">Become a sponsor today.</span></h2>
+          <p class="lead">We've got big dreams, innovative ideas, a great design, and the plan to get us from A to Z. All we need now is you. Find out today what you can do to help and how you can become a champion of child safety along with us.</p>
+		  <p><%= link_to 'View details &raquo;'.html_safe, display_sponsor_path, :class => "btn btn-default", :role => "button" %></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive img-rounded" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+  </body>
+</html>

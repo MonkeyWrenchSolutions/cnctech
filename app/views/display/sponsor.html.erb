@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <!-- Header
+    ================================================== -->
+	<div class="container">
+		<div class="page-header">
+			<center><h1>Help Us Achieve Our Dreams</h1></center>
+			<ul class="nav nav-pills nav-justified">
+				<li class="active"><%= link_to "Goals & Milestones", display_sponsor_path %>
+				<li><%= link_to "Current Sponsors", display_sponsor_path %>
+				<li><%= link_to "Become a Sponsor", display_sponsor_path %>
+			</ul>
+		</div>
+		<h2>Current progress toward prototype funding:</h2>
+		<div class="progress progress-striped active">
+			<div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+				<span class="sr-only">45% Complete</span>
+			</div>
+		</div>
+		<div class="well">
+			Outline of goals and milestones goes here
+		</div>
+		<hr>
+	</div>
+    <!-- /. header -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+		<h2>Meet Our Sponsors</h2>
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Sponsor Name<br>
+		  <button type="button" class="btn btn-primary">Primary</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-thumbnail" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Sponsor Name<br>
+		  <button type="button" class="btn btn-primary">Primary</button>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Sponsor Name<br>
+		  <button type="button" class="btn btn-primary">Primary</button>
+        </div><!-- /.col-lg-4 -->
+	  </div><!-- /.row -->
+	
+		<hr>
+    </div><!-- /.container -->
+
+	<div class="container">
+	<div class="col-lg-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Become a Sponsor</h3>
+			</div>
+			<div class="panel-body">
+				<p>We'd greatly appreciate your help making our dreams a reality. What can you do? While monetary donations are always gratefully accepted, you could also...Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+				<p>What's in it for you? Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<p><strong>We're actively seeking the donation of two cars within which to build our prototypes.</strong> Can you or someone you know help us out? We'd love to hear from you!</p>
+			</div>
+		</div>
+		</div>
+		<div class="col-lg-8">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Contact Us</h3>
+			</div>
+			<div class="panel-body">
+				<%= render 'sponsor_form' %>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<%= form_tag({controller: "display", action: "sponsor"}, method: "get", class: "form-horizontal") do %>
+	<div class="form-group">
+		<%= label_tag(:sponsorInputName, "Your Name", class: "col-sm-2 control-label") %>
+		<div class="col-sm-9">
+			<%= text_field_tag(:sponsorInputName, nil, placeholder: "We need your name to thank you properly!", class: "form-control") %>
+		</div>
+	</div>
+	<div class="form-group">
+		<%= label_tag(:sponsorInputEmail, "Email Address", class: "col-sm-2 control-label") %>
+		<div class="col-sm-9">
+			<%= email_field(:sponsorInputEmail, nil, placeholder: "How do we contact you electronically?", class: "form-control") %>
+		</div>
+	</div>
+	<div class="form-group">
+		<%= label_tag(:sponsorInputPhone, "Phone Number", class: "col-sm-2 control-label") %>
+		<div class="col-sm-9">
+			<%= telephone_field(:sponsorInputPhone, nil, placeholder: "How do we contact you telephonically?", class: "form-control") %>
+		</div>
+	</div>
+	<div class="form-group">
+		<%= label_tag(:sponsorInputMessage, "Message", class: "col-sm-2 control-label") %>
+		<div class="col-sm-9">
+			<%= text_area_tag(:sponsorInputMessage, nil, placeholder: "Tell us how you'd like to help", class: "form-control", rows: "3") %>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-9">
+			<%= submit_tag("Submit", class: "btn btn-default") %>
+		</div>
+	</div>
+<% end %>

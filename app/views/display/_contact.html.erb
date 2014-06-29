@@ -1,6 +1,17 @@
-<div id="contact-alert" class="container" style="display: none">
-  <div class="alert alert-warning alert-dismissible" role="alert">
-    <button type="button" class="close" onclick="$('#contact-alert').hide()"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+<!-- Contact modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        Know of a way you can help CNC Technology Works? Interested in becoming a sponsor? We'd love to hear from you! You can reach Darryl Brewer at <%= link_to number_to_phone(1234567890, area_code: true), "callto:1234567890" %>.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>

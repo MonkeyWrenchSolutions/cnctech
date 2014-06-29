@@ -52,7 +52,7 @@
             <li class="<%= 'active' if params[:action] == 'who' %>"><%= link_to "Team", display_who_path %></li>
             <li class="<%= 'active' if params[:action] == 'product' %>"><%= link_to "Re-Lux", display_product_path %></li>
             <li class="<%= 'active' if params[:action] == 'sponsor' %>"><%= link_to "Sponsors", display_sponsor_path %></li>
-            <li id="contact-li" class="<%= 'active' if params[:action] == 'contact' %>"><a href="#" onclick="$('#contact-alert').show()">Contact</a></li>
+            <li class="<%= 'active' if params[:action] == 'contact' %>"><%= link_to "Contact", "#", :data => {:toggle => "modal", :target => "#contactModal"} %></li>
           </ul>
         </div>
       </div>

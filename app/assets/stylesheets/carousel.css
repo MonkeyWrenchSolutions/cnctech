@@ -109,6 +109,10 @@ body {
     padding-left: 0;
   }
 
+  .container {
+      max-width: 1000px;
+  }
+
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 20px;
@@ -141,6 +145,6 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
   }
 }

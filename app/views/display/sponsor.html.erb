@@ -6,7 +6,7 @@
 ================================================== -->
 <div class="container">
   <div class="page-header">
-    <h1 style="text-align: center">Help Us Achieve Our Dreams</h1>
+    <h1>Help Us Achieve Our Dreams</h1>
     <ul class="nav nav-pills nav-justified" id="sponsor-subnav">
       <li><%= link_to "Goals & Milestones", display_sponsor_path(anchor: "goal-milestone") %>
       <li><%= link_to "Current Sponsors", display_sponsor_path(anchor: "current-sponsor") %>
@@ -22,7 +22,7 @@
 <div class="container marketing">
   <h2 id="goal-milestone">Current progress toward prototype funding:</h2>
   <div class="progress progress-striped active">
-    <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+    <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%; border: 1px solid #4b88be">
       <span class="sr-only">45% Complete</span>
     </div>
   </div>
@@ -30,9 +30,9 @@
     Outline of goals and milestones goes here
   </div>
   <br>
-    <%= link_to display_sponsor_path(anchor: "") do %>
-        <%= content_tag(:i, "", class: "pull-right glyphicon glyphicon-chevron-up") %>
-    <% end %>
+  <%= link_to display_sponsor_path(anchor: "") do %>
+      <%= content_tag(:i, "", class: "pull-right glyphicon glyphicon-chevron-up") %>
+  <% end %>
   <hr>
 </div>
 
@@ -42,19 +42,19 @@
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="col-lg-4">
-      <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
-      <h2>Sponsor Name<br>
-        <button type="button" class="btn btn-primary">Primary</button>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-thumbnail" data-src="holder.js/140x140" alt="Generic placeholder image">
-      <h2>Sponsor Name<br>
-        <button type="button" class="btn btn-primary">Primary</button>
+      <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
+      <h2>Your Name Here</h2><br>
+        <button type="button" class="btn btn-primary">Links Back to You</button>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
       <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
-      <h2>Sponsor Name<br>
-        <button type="button" class="btn btn-primary">Primary</button>
+      <h2>Company Name Here</h2><br>
+        <button type="button" class="btn btn-primary">Company's Website</button>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
+      <h2>This Could Be You!</h2><br>
+        <button type="button" class="btn btn-primary">We'd love to have you!</button>
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
   <%= link_to display_sponsor_path(anchor: "") do %>
@@ -64,24 +64,43 @@
 </div><!-- /.container -->
 
 <div class="container">
-  <div class="col-lg-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title" id="become-sponsor">Become a Sponsor</h3>
-      </div>
-      <div class="panel-body">
-        <p>We'd greatly appreciate your help making our dreams a reality. What can you do? While monetary donations are always gratefully accepted, you could also donate time, talent, or materials. If you'd like to contribute, we'd love to talk to you about coming along for the ride.</p>
-        <p><strong>At present, we're actively seeking the donation of two cars within which to build our prototypes.</strong> Can you or someone you know help us out? We'd love to hear from you!</p>
-      </div>
+  <h2 id="become-sponsor">Become a Sponsor</h2>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>We'd greatly appreciate your help making our dreams a reality. What can you do? While monetary donations are always gratefully accepted, you could also donate time, talent, or materials. If you'd like to contribute, we'd love to talk to you about coming along for the ride.</p>
     </div>
   </div>
-  <div class="col-lg-8">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Contact Us</h3>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Sponsorship Benefits</div>
+        <div class="panel-body">
+          <p>We want everyone to know how grateful we are to our sponsors. Not only will we be telling all of our friends how you helped CNC Technology Works reinvent child safety, we'll also be sure to put your photo, name, and a link back to you right here on our site. Companies and corporations can be sponsors, too, and we'll gladly display your logo and link back to your website.</p>
+
+        </div>
       </div>
-      <div class="panel-body">
-        <%= render 'sponsor_form' %>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Contact Us</div>
+        <div class="panel-body">
+          <p>Can you or someone you know help us out? We'd love to hear from you! Founder Darryl Brewer can be reached at
+            <%= mail_to "test@cnctechworks.net", "test@cnctechworks.net", subject: "I want to become a sponsor!", body: "CNC Technology Works Team, I love what you're doing and I want to be a part of it. I want to help by ____. You can reach me at ____." %>
+            or
+            <span id="phone-number-desktop"><%= link_to number_to_phone(1234567890, area_code: true), "callto:1234567890" %></span><span id="phone-number-mobile"><%= link_to number_to_phone(1234567890, area_code: true), "tel:1234567890" %></span>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Current Needs</div>
+        <div class="panel-body">
+          <p>While donation or sponsorship of any form is gratefully accepted, we are looking for a few things in particular at this point in time:</p>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Donation of two cars</strong> within which to build our prototypes</li>
+          <li class="list-group-item"><strong>One license for SolidWorks</strong>, a computer-aided design software that we can use to not only create a digital, 3D model of our product, but also do mathematical analysis of our design</li>
+        </ul>
       </div>
     </div>
   </div>

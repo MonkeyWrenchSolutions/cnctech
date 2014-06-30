@@ -1,6 +1,7 @@
 /* Business colors */
 $cncBlue: #4b88be;
 $cncGrey: #c2c2c2;
+$cncBlueLight: #A5C4DE;
 
 $gray-light: $cncBlue; /* Featurette second header */
 $gray-lighter: $cncBlue; /* Featurette hr */
@@ -26,10 +27,28 @@ $gray-lighter: $cncBlue; /* Featurette hr */
   border: 1px solid $cncGrey;
 }
 
+h1, h2, h3, h4, h5, h6, .panel-heading {
+  text-align: center;
+}
+
+.panel-body {
+  text-align: justify;
+}
+
+#goal-milestone, #current-sponsor, #become-sponsor {
+  text-align: left;
+}
+
 blockquote {
   border-radius: 20px;
   float: left;
-  width: 50%;
+  width: 30%;
+}
+
+.blockquote-image {
+  border: none;
+  float: right;
+  width: 350px;
 }
 
 // Use appropriate phone link depending on target
@@ -40,8 +59,10 @@ blockquote {
 #phone-number-desktop {
   display: none;
 }
-
+$mobile: true;
 @media (min-width: 768px) {
+  $mobile: false;
+
   #phone-number-mobile {
     display: none;
   }

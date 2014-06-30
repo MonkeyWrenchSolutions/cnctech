@@ -45,3 +45,30 @@ blockquote {
 .featurette-heading {
   margin-top: 0;
 }
+
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: auto;
+}
+
+// Use appropriate phone link depending on target
+#phone-number-mobile {
+  display: inline;
+}
+
+#phone-number-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #phone-number-mobile {
+    display: none;
+  }
+
+  #phone-number-desktop {
+    display: inline;
+  }
+}

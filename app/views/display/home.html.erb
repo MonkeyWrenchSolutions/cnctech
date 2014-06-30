@@ -20,7 +20,9 @@
 					<%= image_tag "logo-large.png", class: "featurette-image img-responsive img-rounded", width: "500px", height: "auto"%>
         </div>
       </div>
-
+      <%= link_to display_home_path(anchor: "") do %>
+          <%= content_tag(:i, "", class: "pull-right glyphicon glyphicon-chevron-up") %>
+      <% end %>
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -34,6 +36,9 @@
         </div>
       </div>
 
+      <%= link_to display_home_path(anchor: "") do %>
+          <%= content_tag(:i, "", class: "pull-right glyphicon glyphicon-chevron-up") %>
+      <% end %>
       <hr class="featurette-divider">
 
       <div class="row featurette">

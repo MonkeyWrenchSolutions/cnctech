@@ -22,36 +22,14 @@ $gray-lighter: $cncBlue; /* Featurette hr */
   }
 }
 
-body {
-  padding-top: 90px;
-}
-
 .img-rounded {
   border: 1px solid $cncGrey;
-}
-
-@media (min-width: 992px) {
-  form {
-    padding-top:20px;
-  }
 }
 
 blockquote {
   border-radius: 20px;
   float: left;
   width: 50%;
-}
-
-.featurette-heading {
-  margin-top: 0;
-}
-
-.modal {
-  overflow-y: auto;
-}
-
-.modal-open {
-  overflow: auto;
 }
 
 // Use appropriate phone link depending on target
@@ -72,3 +50,37 @@ blockquote {
     display: inline;
   }
 }
+
+// SPACING CORRECTIONS
+body {
+  padding-top: 90px;
+}
+
+@media (min-width: 992px) {
+  form {
+    padding-top:20px;
+  }
+}
+
+// Adjust default featurette spacing
+.featurette-heading {
+  margin-top: 0;
+}
+
+.featurette {
+  padding-bottom: 10px;
+}
+
+.featurette-divider {
+  margin-top: 20px;
+}
+
+// Prevent shifting caused by scrollbar disappearance
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: auto;
+}
+// END SPACING CORRECTIONS

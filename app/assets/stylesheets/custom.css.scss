@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6, .panel-heading {
   text-align: center;
 }
 
+.featurette-heading {
+  text-align: left;
+}
+
 .panel-body {
   text-align: justify;
 }
@@ -41,8 +45,8 @@ h1, h2, h3, h4, h5, h6, .panel-heading {
 
 blockquote {
   border-radius: 20px;
-  float: left;
-  width: 30%;
+//  float: left;
+//  width: 30%;
 }
 
 .blockquote-image {

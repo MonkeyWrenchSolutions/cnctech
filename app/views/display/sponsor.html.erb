@@ -8,7 +8,6 @@
   <div class="page-header">
     <h1>Help Us Achieve Our Dreams</h1>
     <ul class="nav nav-pills nav-justified" id="sponsor-subnav">
-      <li><%= link_to "Goals & Milestones", display_sponsor_path(anchor: "goal-milestone") %>
       <li><%= link_to "Current Sponsors", display_sponsor_path(anchor: "current-sponsor") %>
       <li><%= link_to "Become a Sponsor", display_sponsor_path(anchor: "become-sponsor") %>
     </ul>
@@ -19,23 +18,6 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-<div class="container marketing">
-  <h2 id="goal-milestone">Current progress toward prototype funding:</h2>
-  <div class="progress progress-striped active">
-    <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%; border: 1px solid #4b88be">
-      <span class="sr-only">45% Complete</span>
-    </div>
-  </div>
-  <div class="well">
-    Outline of goals and milestones goes here
-  </div>
-  <br>
-  <%= link_to display_sponsor_path(anchor: "") do %>
-      <%= content_tag(:i, "", class: "pull-right glyphicon glyphicon-chevron-up") %>
-  <% end %>
-  <hr>
-</div>
-
 <div class="container marketing">
   <h2 id="current-sponsor">Meet Our Sponsors</h2>
 
@@ -99,7 +81,7 @@
         </div>
         <ul class="list-group">
           <li class="list-group-item"><strong>Donation of two cars</strong> within which to build our prototypes</li>
-          <li class="list-group-item"><strong>One license for SolidWorks</strong>, a computer-aided design software that we can use to not only create a digital, 3D model of our product, but also do mathematical analysis of our design</li>
+          <li class="list-group-item"><strong>One license to use SolidWorks</strong>, a computer-aided design software that we can use to not only create a digital, 3D model of our product, but also do mathematical analysis of our design</li>
         </ul>
       </div>
     </div>
